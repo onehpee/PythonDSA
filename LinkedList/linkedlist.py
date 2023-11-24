@@ -90,7 +90,7 @@ class LinkedList:
     
 if __name__ == "__main__":
     LL = LinkedList()
-    #LL.insert_at_begining(12)
+    #LL.insert_at_begining(122)
     #LL.insert_at_begining(24)
     #LL.insert_at_end(36)
     LL.insert_values(["Hat", "Bat", "Cat"])
