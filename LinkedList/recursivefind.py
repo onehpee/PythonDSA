@@ -4,8 +4,8 @@
 
 class Node:
     def __init__(self, data):
-        self.data = data  # instance variable to store the data
-        self.next = None  # instance variable with address of next node
+        self.data = data  # instance variablee to store the data
+        self.next = None  # instance variablee with address of next node
 
     #  Write your find method here:
 
