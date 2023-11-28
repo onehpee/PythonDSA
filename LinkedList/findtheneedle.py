@@ -9,6 +9,14 @@ class Node:
 
 
     # Write your find method here:
+    def find(self, data):
+        current = self
+        while(current != None):
+            if current.data == data:
+                return current
+            current = current.next
+
+        return None
 
 # The head is the first node in a linked list.
 head = Node("Maine")

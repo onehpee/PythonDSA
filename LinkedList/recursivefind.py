@@ -8,7 +8,13 @@ class Node:
         self.next = None  # instance variablee with address of next node
 
     #  Write your find method here:
-
+    def find(self, data):
+        current = self
+        if(current.data == data):
+            return current
+        elif(current.next == None):
+            return current
+        return current.next.find(data)
 
 # The head is the first node in a linked list.
 head = Node("Maine")
