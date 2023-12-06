@@ -1,6 +1,20 @@
+#A linked list is a data structure made up of many nodes 
+#Nodes can contain data
+#The nodes can be linked
+#The first node is the head/position 0
+#The last node is the tail
+#It is a ordered data structure
+
+#linked list has positions and nodes
+#linked list insertion will be constant 0 of 1 time
+#Doesn't have to be contiguousl, can exist anywhere in memory addressing
+#You don't have to shift elements, just change the nodes next pointer
+#Array has index and elements stored contiguously or right next to eachother
+#When you insert and element you have to shift every element n amount of times
+
 class Node:
     def __init__(self, data=None, next=None):
-        self.data = data
+        self.data = data    
         self.next = next
 
 
