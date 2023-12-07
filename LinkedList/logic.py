@@ -43,7 +43,20 @@ class LinkedList:
             iterater = iterater.next
         print(linklist_string)
         
+    # def linkedlistvalues(self,head):
+    #     values = []
+    #     current = head
+    #     while current != None:
+    #         values.insert(current.data)        
+    #         current = current.next
+    #         return values
         
         
 if __name__ == "__main__":
     LL = LinkedList()
+    LL.linkedlistvalues("A")
+    LL.linkedlistvalues("B")
+    LL.linkedlistvalues("C")
+    LL.linkedlistvalues("D")
+    LL.print()
+    
