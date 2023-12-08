@@ -21,6 +21,8 @@
 #current = current.next = is setting your current position to the next node
 #current = Null = means reaching the end of the linked list
 
+#recursion is defining and solving 
+#a problem in terms of smaller instances of the same problem.
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -29,6 +31,14 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
+    
+    def find(self, data):
+        current = self
+        if(current.data == data):
+            return current
+        elif(current.next == None):
+            return current
+        return current.next.find(data)
         
     def print(self):
         if self.head is None:
