@@ -24,3 +24,32 @@ def findMax(self, list):
         print(possible_max1)
     else:
         print(possible_max2)
+        
+        
+#Parts of a Recursive Algorithm
+#All recursive algorithms have the following
+# 1. Base Case(i.e., when to stop)
+# 2. Work toward base case
+# 3. Recursive Call(i.e., call ourselves)
+
+# The "work toward base case" is where we make the problem simpler (e.g., divide list into two parts, each smaller than the original).
+# The recursive call, is where we use the same algorithm to solve a simpler version of the problem. 
+# The base case is the solution to the "simplest" possible problem
+# (For example, the base case in the problem 'find the largest number in a list' would be if the list had only one number... 
+# and by definition if there is only one number, it is the largest). 
+
+#Example
+#Adding three numbers is equivalent to adding the first two numbers, and then adding these two numbers again. 
+
+def add_numbers(*args):
+    if (len(args) == 2):
+        return sum(args)
+    elif(len(args) == 3):
+        return sum(args)
+    else:
+        return
+    
+    
+    
+if __name__ == "__main__":
+    print(add_numbers(2,3))
