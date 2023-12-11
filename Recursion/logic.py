@@ -49,6 +49,23 @@ def add_numbers(*args):
     else:
         return
     
+# Base Case: if (len(args) == 2) result = a + b;
+# "Work toward base case": a+b becomes the first parameter
+# This reduces the number of parameters (nargin) sent in to the function from 3 to 2, and 2 is the base case!
+# Recursive Call: add_numbers(a+b, c);
+
+# Why Recursion Works
+# In a recursive algorithm, the computer "remembers" every previous state of the problem.
+# This information is "held" by the computer on the "activation stack" (i.e., inside of each functions workspace).
+
+# Every function has its own workspace PER CALL of the function. 
+
+
+    
+
+    
+
+    
     
     
 if __name__ == "__main__":
