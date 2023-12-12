@@ -62,7 +62,10 @@ def add_numbers(*args):
 
 
     
-
+#Maze Example
+# Consider a rectangle grid of rooms, where each room may or may not have doors on the North, South, East, and West sides.
+# How do you find your way out of a maze? Here is one possible "algorithm" for finding the answer:
+# For every door in the current room, if the door leads to the exit, take that door. 
     
 
     
