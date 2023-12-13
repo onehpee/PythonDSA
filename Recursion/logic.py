@@ -66,7 +66,14 @@ def add_numbers(*args):
 # Consider a rectangle grid of rooms, where each room may or may not have doors on the North, South, East, and West sides.
 # How do you find your way out of a maze? Here is one possible "algorithm" for finding the answer:
 # For every door in the current room, if the door leads to the exit, take that door. 
-    
+# The "trick" here is of course, how do we know if the door leads to a room that leads to the exit? 
+# The answer is we don't but we can let the computer figure it out for us.
+# What is the recursive part about the above algorithm? Its the "door leads out of the maze".
+# How do we know if a door leads out of the maze? We know because inside the next room (going through the door),
+# we ask the same question, how do we get out of the maze?
+# What happens is the computer "remembers" all the "what ifs". What if I take the first door, 
+# what if I take the second door, what if I take the next door, etc. And for every possible door you can move through, 
+# the computer remembers those what ifs, and for every door after that, and after that, etc, until the end is found.   
 
     
     
