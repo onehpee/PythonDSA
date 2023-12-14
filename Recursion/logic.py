@@ -75,8 +75,17 @@ def add_numbers(*args):
 # what if I take the second door, what if I take the next door, etc. And for every possible door you can move through, 
 # the computer remembers those what ifs, and for every door after that, and after that, etc, until the end is found.   
 
-    
+# Question: What is a recursive solution to summing up a list of numbers? 
+# First you should note that the sum of [1 2 3 4 5 6 7 8 9]) is equal to 1 + sum of [2 3 4 5 6 7 8 9])! 
+
+def sumnum(list):  
+    list = []
+    if(len(list) == 0):
+        print(0)
+    else:
+        print(list[0] + sum(list))
     
     
 if __name__ == "__main__":
     print(add_numbers(2,3))
+    print(sumnum([1, 2, 3, 4, 5, 6, 7, 8, 9]))
