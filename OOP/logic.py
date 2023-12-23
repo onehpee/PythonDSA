@@ -39,3 +39,57 @@ class Cookie:
 		self.name = name
 		self.shape = shape
 		self.chips = chips
+
+	# The object is passing itself as a parameter
+	def bake(self):
+		print(f'This {self.name}, is being baked with the shape {self.shape} and chips of {self.chips}')
+		print('Enjoy your cookie!')
+  
+  
+# 1. Abstraction
+
+# Abstraction hides the internal functionality of an application from the user. The user could be either the end client or other developers.
+# We can find abstraction in our daily lives. For example, you know how to use your phone, but you probably don’t know exactly what’s happening inside it each time you open an app.
+# Another example is Python itself. You know how to use it to build functional software, and you can do it even if you don’t understand Python’s inner workings.
+# Applying the same to code allows you to collect all the objects in a problem and abstract standard functionality into classes.
+
+
+# 2. Inheritance
+# Inheritance allows us to define multiple subclasses from an already defined class.
+# The primary purpose of it is to follow the DRY principle. You’ll be able to reuse a lot of code by implementing all the sharing components into superclasses.
+# You can think of it as the real-life concept of genetic inheritance. Children (subclass) are the result of inheritance between two parents (superclasses). 
+# They inherit all the physical characteristics (attributes) and some common behaviors (methods).
+
+
+
+# 3. Polymorphism
+# Polymorphism lets us slightly modify methods and attributes of the subclasses previously defined in the superclass.
+# The literal meaning is “many forms.” That’s because we build methods with the same name but different functionality.
+# Going back to the previous idea, children are also a perfect example of polymorphism. They can inherit a defined behavior get_hungry() but in a slightly different way,
+# for instance, getting hungry every 4 hours instead of every 6.
+
+
+
+# 4. Encapsulation
+# Encapsulation is the process in which we protect the internal integrity of data in a class.
+# Although there isn’t a private statement in Python, you can apply encapsulation by using mangling in Python.
+# There are special methods named getters and setters that allow us to access unique attributes and methods.
+# Let’s imagine a Human class that has a unique attribute named _height. You can modify this attribute only within certain constraints 
+# (it’s nearly impossible to be higher than 3 meters).
+
+
+
+class Shape:
+	def __init__(self, side1, side2):
+		self.side1 = side1
+		self.side2 = side2
+
+	def get_area(self):
+		return self.side1 * self.side2
+
+	def __str__(self):
+		return f'The area of this {self.__class__.__name__} is: {self.get_area()}'
+
+
+class Rectangle(Shape): # Superclass in Parenthesis
+	pass
