@@ -1,3 +1,5 @@
+from math import pi
+ 
 #Object-Oriented Programming (OOP) is a programming paradigm in which we can think about complex problems as objects.
 # A paradigm is a theory that supplies the base for solving problems.
 # So when we’re talking about OOP, we’re referring to a set of concepts and patterns we use to solve problems with objects.
@@ -93,3 +95,23 @@ class Shape:
 
 class Rectangle(Shape): # Superclass in Parenthesis
 	pass
+
+class Square(Rectangle):
+	def __init__(self, side):
+		super().__init__(side, side)
+  
+class Triangle(Rectangle):
+	def __init__(self, base, height):
+		super().__init__(base, height)
+ 
+	def get_area(self):
+		area = super().get_area()
+		return area / 2
+
+
+class Circle(Shape):
+	def __init__(self, radius):
+		self.radius = radius
+ 
+	def get_area(self):
+		return pi * (self.radius ** 2)
