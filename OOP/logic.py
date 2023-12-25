@@ -3,7 +3,7 @@ from math import pi
 #Object-Oriented Programming (OOP) is a programming paradigm in which we can think about complex problems as objects.
 # A paradigm is a theory that supplies the base for solving problems.
 # So when we’re talking about OOP, we’re referring to a set of concepts and patterns we use to solve problems with objects.
-# An object in Python is a single collection of data (attributes) and behavior (methods). You can think of objects as real things around you.
+# An object in Pythonn is a single collection of data (attributes) and behavior (methods). You can think of objects as real things around you.
 
 # OOP Allows You to Code Faster
 # Coding faster doesn’t mean writing fewer lines of code. It means you can implement more features in less time without compromising the stability of a project.
