@@ -1,4 +1,5 @@
 from math import pi
+from math import sqrt
  
 #Object-Oriented Programming (OOP) is a programming paradigm in which we can think about complex problems as objects.
 # A paradigm is a theory that supplies the base for solving problems.
@@ -115,3 +116,10 @@ class Circle(Shape):
  
 	def get_area(self):
 		return pi * (self.radius ** 2)
+
+class Hexagon(Rectangle):
+	
+	def get_area(self):
+		return (3 * sqrt(3) * self.side1 ** 2) / 2
+
+breakpoint()
