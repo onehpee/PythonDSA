@@ -25,3 +25,28 @@ print(phonebook)
 phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
 for name, number in phonebook.items():
     print("Phone number of %s is %d" % (name, number))
+    
+    
+    
+# Removing a value
+
+# To remove a specified index, use either one of the following notations:
+phonebook = {
+   "John" : 938477566,
+   "Jack" : 938377264,
+   "Jill" : 947662781
+}
+del phonebook["John"]
+print(phonebook)
+
+# or:
+phonebook = {
+   "John" : 938477566,
+   "Jack" : 938377264,
+   "Jill" : 947662781
+}
+phonebook.pop("John")
+print(phonebook)
+
+# Add "Jake" to the phonebook with the phone number 938273443, 
+# and remove Jill from the phonebook.
